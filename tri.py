@@ -12,7 +12,6 @@ valeurMax = int(input("entrez une valeur max pour les éléments du tableau : ")
 tableau = []
 for i in range(taille) :
     tableau.append(random.randint(valeurMin,valeurMax))
-print ("taille du tableau : ",len(tableau))
 print (tableau)
 
 # ______Fonction
@@ -32,4 +31,8 @@ def petit(x,y):
 
 # ______Tri du tableau
 
-print(petit(0,taille))
+for i in range (0,taille-1):
+    position=(petit(i,taille))
+    #print("la plus petite valeur du tableau est ",tableau[position]," à la ",position+1,"e place dans le tableau.")
+    tableau.insert(i,tableau.pop(position))
+    print(tableau)
