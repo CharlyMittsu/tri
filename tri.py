@@ -31,5 +31,5 @@ def petit(x,y):
     return b
 
 # ______Tri du tableau
-print(tableau)
-petit(0,taille)
+
+print(petit(0,taille))
